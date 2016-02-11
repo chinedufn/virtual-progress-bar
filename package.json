@@ -1,0 +1,46 @@
+{
+  "name": "virtual-progress-bar",
+  "version": "0.0.1",
+  "description": "virtual-dom progress bar component",
+  "main": "src/virtual-progress-bar.js",
+  "scripts": {
+    "demo": "budo demo/browser.js --open --live",
+    "deploy": "mkdirp example-dist && browserify demo/browser.js | htmlify > example-dist/index.html && gh-pages -d example-dist",
+    "test": "standard && node test/virtual-progress-bar.js && browserify test/virtual-progress-bar.js | testron"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chinedufn/virtual-progress-bar.git"
+  },
+  "keywords": [
+    "virtual",
+    "dom",
+    "progress",
+    "bar",
+    "component",
+    "react"
+  ],
+  "author": "Chinedu Francis Nwafili <frankie.nwafili@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chinedufn/virtual-progress-bar/issues"
+  },
+  "homepage": "https://github.com/chinedufn/virtual-progress-bar#readme",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "budo": "^8.0.4",
+    "electron-prebuilt": "^0.36.7",
+    "gh-pages": "^0.9.0",
+    "inline-htmlify": "^2.0.0",
+    "mkdirp": "^0.5.1",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "standard": "^6.0.4",
+    "tape": "^4.4.0",
+    "testron": "^1.2.0",
+    "virtual-dom": "^2.1.1"
+  },
+  "dependencies": {
+    "xtend": "^4.0.1"
+  }
+}
