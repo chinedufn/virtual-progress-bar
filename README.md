@@ -3,7 +3,7 @@ virtual-progress-bar [![npm version](https://badge.fury.io/js/virtual-progress-b
 
 > A stateless progress bar component. Takes on its parent element's width and height
 
-[View live demo](http://chinedufn.github.io/virtual-progress-bar)
+[View live demo](http://chinedufn.github.io/virtual-progress-bar/)
 
 Examples:
 
