@@ -41,6 +41,7 @@
     "virtual-dom": "^2.1.1"
   },
   "dependencies": {
+    "preflex": "~1.0.0",
     "xtend": "^4.0.1"
   }
 }

@@ -1,5 +1,6 @@
 var defaults = require('./default-options.js')
 var extend = require('xtend')
+var prefix = require('preflex')
 
 module.exports = {
   render: RenderProgressBar
@@ -21,7 +22,7 @@ function RenderProgressBar (h, opts) {
   })
 
   container = h('div', {
-    style: {
+    style: prefix({
       alignItems: 'flex-end',
       backgroundColor: opts.containerColor,
       borderRadius: '5px',
@@ -29,9 +30,8 @@ function RenderProgressBar (h, opts) {
       display: 'flex',
       height: '100%',
       padding: '5px',
-      WebkitAlignItems: 'flex-end',
       width: '100%'
-    }
+    })
   }, meter)
   return container
 }
