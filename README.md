@@ -21,16 +21,20 @@ $ npm install --save virtual-progress-bar
 `virtual-progress-bar` works with [virtual-dom](https://github.com/Matt-Esch/virtual-dom),
 [react](https://npmjs.com/package/react), or any other DOM builder with a [hyperscript](https://github.com/Raynos/virtual-hyperscript#hselector-properties-children) style api
 
+with [virtual-dom](https://github.com/Matt-Esch/virtual-dom)
+
 ```js
 var h = require('virtual-dom/h')
 var ProgressBar = require('virtual-progress-bar')
-ProgressBar(h) // returns vtree
+ProgressBar.render(h) // returns vtree
 ```
+
+with [react](https://npmjs.com/package/react)
 
 ```js
 var h = require('react').createElement
 var ProgressBar = require('virtual-progress-bar')
-ProgressBar(h, {meterColor: 'red'}) // returns vtree
+ProgressBar.render(h, {meterColor: 'red'}) // returns vtree
 ```
 
 
@@ -78,7 +82,7 @@ var myOptions = {
   containerColor: 'rgba(0, 0, 0, .8)',
   meterColor: '#ff0000'
   direction: 'column',
-  percent: '90'
+  percent: 90
 }
 ProgressBar.render(h, myOptions)
 ```
