@@ -16,6 +16,15 @@ Examples:
 $ npm install --save virtual-progress-bar
 ```
 
+## Demo
+
+You can also run the [live demo](http://chinedufn.github.io/virtual-progress-bar/) locally:
+
+```sh
+# Your changes to the `/demo` folder will now live reload in your browser
+git clone https://github.com/chinedufn/virtual-progress-bar && cd virtual-progress-bar && npm install && npm run demo
+```
+
 ## Usage
 
 `virtual-progress-bar` works with [virtual-dom](https://github.com/Matt-Esch/virtual-dom),
