@@ -117,6 +117,18 @@ Default: `50`
 
 The percent that your meter is filled
 
+##### meterStyle
+
+Type: `Object`
+
+Styles that you pass in to override the default styling for the meter
+
+##### containerStyle
+
+Type: `Object`
+
+Styles that you pass in to override the default styling for the container
+
 ## TODO:
 
 - Clean up examples

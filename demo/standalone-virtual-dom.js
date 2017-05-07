@@ -14,7 +14,10 @@ var oldProgressBarVtree = exampleWrapper(ProgressBar.render(h, {
   percent: percent,
   direction: direction,
   meterColor: meterColor,
-  containerColor: containerColor
+  containerColor: containerColor,
+  containerStyle: {
+    padding: '0px'
+  }
 }))
 
 var progressBarElement = createElement(oldProgressBarVtree)

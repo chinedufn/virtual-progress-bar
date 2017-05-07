@@ -4,7 +4,7 @@
   "description": "virtual-dom progress bar component",
   "main": "src/virtual-progress-bar.js",
   "scripts": {
-    "demo": "budo demo/browser.js --open --live",
+    "demo": "budo demo/browser.js --open --live --host=127.0.0.1",
     "deploy": "mkdirp example-dist && browserify demo/browser.js | htmlify > example-dist/index.html && gh-pages -d example-dist",
     "test": "standard && node test/virtual-progress-bar.js && browserify test/virtual-progress-bar.js | testron"
   },
